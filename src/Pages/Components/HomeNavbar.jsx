@@ -27,10 +27,10 @@ const HomeNavbar = () => {
   const buttonClassNames = `bg-[#EB1933] text-white py-[11px] px-5 border border-[#EB1933] rounded-md hover:bg-white hover:text-[#EB1933] transition-all duration-300 ${animationClassRight}`;
 
   return (
-    <nav className="2xl:mx-[7.5rem] text-white flex justify-between items-center 2xl:py-2">
+    <nav className="text-white flex justify-between items-center mx-[12px] lg:-mx-[2.5rem] 2xl:mx-[7.5rem] py-2">
       <Link to="/" className={`${animationClassLeft}`}>
         <img
-          className="2xl:w-[200px] 2xl:h-[50px] object-cover bg-blend-darken"
+          className="object-cover bg-blend-darken w-[200px] h-[50px]"
           src={imageData || logo}
           alt="flight-expert"
         />

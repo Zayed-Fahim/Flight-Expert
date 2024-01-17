@@ -5,9 +5,9 @@ import OneWayTrip from "./OneWayTrip";
 
 const Home = () => {
   return (
-    <div className="2xl:mx-[7.5rem] 2xl:my-2 2xl:flex 2xl:flex-col 2xl:gap-10">
+    <div className="my-2 flex flex-col gap-5 lg:gap-10">
       <ChooseTrip />
-      <div className="2xl:flex 2xl:gap-10">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-5 lg:gap-10 m-[12px] md:mx-[.5rem] lg:-mx-[2.5rem] 2xl:mx-[7.5rem]">
         <Filter />
         <OneWayTrip />
       </div>

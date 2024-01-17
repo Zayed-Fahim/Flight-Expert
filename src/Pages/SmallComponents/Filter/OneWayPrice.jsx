@@ -19,7 +19,7 @@ const OneWayPrice = () => {
   };
 
   return (
-    <div className="2xl:flex 2xl:flex-col 2xl:gap-4 border-b 2xl:py-5 2xl:px-6">
+    <div className="border-b flex flex-col gap-4 py-5 px-6">
       <label className="text-xl" htmlFor="range">
         One Way Price
       </label>

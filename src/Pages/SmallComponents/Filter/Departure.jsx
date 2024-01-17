@@ -23,16 +23,16 @@ const Departure = () => {
     },
   ];
   return (
-    <div className="2xl:flex 2xl:flex-col 2xl:py-5 gap-5 border-b 2xl:px-6">
+    <div className="border-b flex flex-col py-5 gap-5 px-6">
       <h1 className="text-xl">Departure time in Dhaka</h1>
-      <div className="2xl:grid 2xl:grid-cols-2 2xl:gap-y-2 2xl:gap-x-12">
+      <div className="grid grid-cols-2 gap-y-2 gap-x-12 md:gap-x-4 lg:gap-x-12">
         {departureDetails.map((departure, index) => (
           <div
             key={index}
-            className="2xl:p-2 cursor-pointer border border-black 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center gap-2 rounded-lg"
+            className="cursor-pointer border gap-0 lg:gap-2 rounded-lg border-black p-2 flex flex-col justify-center items-center "
           >
             <span className="cursor-pointer">{departure.icon}</span>
-            <label className="2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center cursor-pointer">
+            <label className="cursor-pointer flex flex-col justify-center items-center">
               <span className="font-bold text-xs">{departure.time}</span>
               <span className="text-xs">
                 {departure.from} - {departure.to}

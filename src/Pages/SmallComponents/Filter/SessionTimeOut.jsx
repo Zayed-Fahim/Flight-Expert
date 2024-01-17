@@ -6,7 +6,7 @@ const SessionTimeout = () => {
   const [showTimeoutMessage, setShowTimeoutMessage] = useState(false);
   const [remainingTime, setRemainingTime] = useState(sessionTimeout);
   const buttonClassNames =
-    "2xl:px-4 2xl:pb-2 2xl:pt-1 bg-[#eb1933] 2xl:rounded-[3px] 2xl:text-xl font-bold text-white cursor-default z-[0]";
+    "px-4 pb-2 pt-1 bg-[#eb1933] rounded-[3px] text-xl font-bold text-white cursor-default z-[0]";
   useEffect(() => {
     let timeoutId;
 
@@ -39,7 +39,7 @@ const SessionTimeout = () => {
     const minutes = Math.floor(timeInSeconds / 60);
     const seconds = timeInSeconds % 60;
     return (
-      <div className="2xl:flex 2xl:items-center 2xl:justify-center 2xl:gap-4">
+      <div className="flex items-center justify-center gap-4">
         <label className="flex flex-col relative">
           <Button
             text={minutes}
@@ -68,7 +68,7 @@ const SessionTimeout = () => {
   };
 
   return (
-    <div className="2xl:flex 2xl:gap-5 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:pt-6 2xl:pb-10 2xl:border-b 2xl:px-6">
+    <div className="flex gap-5 flex-col justify-center items-center pt-5 pb-10 md:pt-6 md:pb-10 border-b md:px-6">
       <p className="text-xl font-semibold">Session Timeout in</p>
       <p className="">{formatTime(remainingTime)}</p>
     </div>
