@@ -1,0 +1,24 @@
+.range-input {
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.range-input::-webkit-slider-runnable-track {
+  height: 0.5rem;
+  width: 100%;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: #eb1933;
+}
+
+.range-input::-webkit-slider-thumb {
+  position: relative;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: var(--rounded-box, 1rem);
+  border: 4px solid #eb1933;
+  background-color: white;
+  appearance: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
